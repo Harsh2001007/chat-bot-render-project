@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-wrapper {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #1a1a1a; /* Darker form background color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.response-wrapper {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #1a1a1a; /* Darker response background color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.separator {
+    width: 2px;
+    height: 100%;
+    background-color: #4b4b4b; /* Dark separator color */
+    margin: 0 20px;
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: calc(100% - 160px);
+    padding: 8px;
+    border: 1px solid #333; /* Darker border color */
+    border-radius: 5px;
+    background-color: #333; /* Darker input background color */
+    color: #fff; /* Light text color */
+}
+
+button {
+    background-color: #1f8ed9; /* Blue accent color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1474b2; /* Darker shade of blue on hover */
+}
+
+button[title="Fill all fields with dummy data"]:hover {
+    background-color: #f7c62f; /* Yellow accent color for Magic Fill button on hover */
+}
+
+button[title="Send form data to API"]:hover {
+    background-color: #4caf50; /* Green accent color for Send button on hover */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top: 4px solid #fff;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+
+.environment-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.environment-card {
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.environment-card:hover {
+    background-color: #333;
+}
+
+.environment-card h3 {
+    margin-top: 0;
+    color: #fff;
+}
+
+.environment-card p {
+    margin-bottom: 0;
+    color: #ccc;
+}
+
+.card-heading {
+    margin-bottom: 20px;
+}
+
+.card-heading p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+
