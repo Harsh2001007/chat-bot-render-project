@@ -74,12 +74,12 @@ export default function App() {
       <p style={{ color: "white", marginLeft: "50px", marginTop: "20px" }}>
         If required, use any of the configured bots
       </p>
-      <div className="envCards-container">
+      {/* <div className="envCards-container">
         <EnvCards envInfo={"Kabir_Prod_Email_API_Bot"} envName={"US"} />
         <EnvCards envInfo={"QA-EmailApi"} envName={"QA"} />
         <EnvCards envInfo={"Harsh_Regression_Email_Api"} envName={"EU"} />
         <EnvCards envInfo={"tHarsh_Email_Api"} envName={"SG"} />
-      </div>
+      </div> */}
     </>
   );
 }
